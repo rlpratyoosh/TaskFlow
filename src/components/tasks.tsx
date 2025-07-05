@@ -161,7 +161,7 @@ export default function TaskList({ tasks }: { tasks: Task[] }) {
             <input
               type="text"
               name="addTask"
-              className="flex-1 border-none outline-none bg-transparent placeholder-gray-500"
+              className="flex-1 border-none outline-none bg-transparent placeholder-gray-500 w-40 sm:w-50"
               placeholder="Add a new task..."
               required
             />
