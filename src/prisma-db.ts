@@ -2,21 +2,6 @@
 import { PrismaClient } from "./generated/prisma";
 const prisma = new PrismaClient();
 
-const populate = async () => {
-  const count = await prisma.task.count();
-  if (count == 0) {
-    await prisma.task.createMany({
-      data: [
-        { title: "Clean Laptop" },
-        { title: "Clean Desk" },
-        { title: "Pack Bag" },
-      ],
-    });
-  }
-};
-
-// populate();
-
 export async function getTasks(userId: string, query?: string) {
   if (query) {
     return prisma.task.findMany({
