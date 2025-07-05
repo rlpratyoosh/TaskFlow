@@ -1,26 +1,32 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --bg-main: #0D1117;
+  --bg-sidebar: #161B22;
+  --bg-hover: #2d333c;
+  --bg-card: #1C2128;
+  --text-primary: #C9D1D9;
+  --text-secondary: #8B949E;
+  --accent: #2F81F7;
+  --success: #3FB950;
+  --danger: #F85149;
+  --border: #30363D;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
+  --color-background: var(--bg-main);
+  --color-foreground: var(--text-primary);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+body {
+  background: var(--bg-main);
+  color: var(--text-primary);
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.cl-avatarBox {
+  width: 2.3rem;
+  height: 2.3rem;
 }
