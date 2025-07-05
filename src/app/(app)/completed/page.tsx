@@ -1,6 +1,12 @@
 import { getTasks } from "@/prisma-db";
 import TaskList from "@/components/tasks";
 import { auth } from "@clerk/nextjs/server";
+import { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "Completed Tak | TaskFlow",
+  description: "Listing only completed Tasks.",
+};
 
 type Task = {
   id: number;

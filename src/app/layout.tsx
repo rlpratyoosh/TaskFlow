@@ -15,8 +15,11 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Task Manager",
+  title: "TaskFlow",
   description: "A To Do List Tracker",
+  icons: {
+    icon: '/favicon.png',
+  }
 };
 
 export default function RootLayout({

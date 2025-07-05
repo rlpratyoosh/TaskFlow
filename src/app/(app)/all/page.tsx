@@ -2,6 +2,12 @@
 import { getTasks } from "@/prisma-db";
 import TaskList from "@/components/tasks";
 import { auth } from "@clerk/nextjs/server";
+import { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "All Task | TaskFlow",
+  description: "Listing all tasks",
+};
 
 type Task = {
   id: number;
