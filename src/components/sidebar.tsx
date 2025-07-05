@@ -45,7 +45,7 @@ export default function SideBar() {
 
   return (
     <aside className="z-10 top-0 left-0 w-60 h-screen border-r border-[var(--border)] bg-[var(--bg-sidebar)] hidden md:flex flex-col items-center justify-start gap-5">
-      <div className="mt-10"></div>
+      <div className="mt-5"></div>
       {isLoaded ?
         <div className="flex justify-start items-center p-4 w-50 gap-2 rounded-xl hover:bg-[var(--bg-hover)] cursor-pointer">
           <UserButton />
