@@ -33,7 +33,7 @@ TaskFlow is a minimal, intuitive task manager to help you stay organized and pro
 ### 1. Clone the repository
 
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/rlpratyoosh/TaskFlow
 cd taskflow 
 ```
 
@@ -45,7 +45,7 @@ npm install
 
 ### Setup ENV
 
-- Create a .env file in the root:
+Create a .env file in the root:
 ```bash
 DATABASE_URL=postgresql://<username>:<password>@<host>:<port>/<db_name>
 CLERK_SECRET_KEY=your_clerk_secret_key
