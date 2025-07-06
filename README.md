@@ -33,7 +33,7 @@ TaskFlow is a minimal, intuitive task manager to help you stay organized and pro
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/rlpratyoosh/TaskFlow
+git clone https://github.com/rlpratyoosh/TaskFlow.git
 cd taskflow 
 ```
 
